@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav-bar</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <div>
+                <img src="./images/icon.png" alt="nav icon" height="20px" width="20px">
+            </div>
+            <div class="nav-icon" onclick="showMenu()">
+                <img src="./images/hamburger-menu.png" alt="nav icon" height="20px" width="20px">
+            </div>
+        </div>
+        <ul id="menus">
+            <li class="nav-link"><a href="C:/Users/thang/Desktop/Landing-Page/index.html#home">Home</a></li>
+            <li class="nav-link"><a href="C:/Users/thang/Desktop/Landing-Page/index.html#about">About</a></li>
+            <li class="nav-link"><a href="C:/Users/thang/Desktop/Landing-Page/index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Ea dolore mollitia enim explicabo, maiores labore!</h3>
+                <a href="#services"><button>See our Work</button></a>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <h3>Who We Are</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aspernatur iure nesciunt maxime sunt dolorem laudantium, corrupti rerum, facere nemo placeat dolore earum iu
+                sto ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eius beatae cupiditate pariatur corrupti nam quasi laborum aliquam dolorem, saepe dolore in minima repellat? 
+                Explicabo vel tempora hic soluta. Ipsam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur itaque velit officia optio, magni debitis fugiat. Culpa commodi aliquam saepe eaque nostrum
+                odit earum at blanditiis, esse aperiam corporis aliquid.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quas! Sed sapiente dignissimos nulla possimus, tenetur labore, sequi atque mollitia, qui rerum sint obcaecati! Itaque sapiente necessitatibus aut odio illo?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quis iure magni nesciunt natus cumque laudantium earum illum amet laborum voluptas voluptatum, inventore tempora commodi qui reprehenderit harum voluptatibus veritatis!
+            </p>
+            </div>
+        </section>
+        <section  id="services">
+            <h3>Our Services</h3>
+            <div class="services">
+            <div class="container">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis id quae aut iure dolorum blanditiis amet minima, earum adipisci beatae! Distinctio culpa nesciunt mollitia praesentium!
+            </div>
+            <div class="container">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel placeat, quidem iusto aperiam est dicta quisquam iste voluptatem saepe deserunt, odio aliquid debitis. Itaque perferendis nostrum et cumque, tenetur quidem.
+            </div>
+            <div class="container">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum aperiam facere, in necessitatibus quibusdam fugit reiciendis sit, dignissimos id officiis velit voluptas consequuntur earum? Blanditiis reiciendis omnis facere nemo fugiat.
+            </div>
+            </div>
+        </section>
+    
+    </main>
+    
+    <footer id="contact">    
+        <section id="footer">
+            <div class="container">
+                <div>
+                    <p><b>Address :</b> No. 256E, SD Arcade, Near KVB ATM, Hospital Road, Kavindapadi, Bhavani Taluk, Erode District, Tamil Nadu 638455, India</p>
+                </div>
+                <div>
+                    <p><b>Phone :</b> +919944111723</p>
+                    <p><b>Email :</b>thinkdifferentking@gmail.com</p>
+                </div>
+            </div>                                            
+            <p class="footer-text">All rights reserved &copy <span id="year"></span></p>
+        </section>
+    </footer>
+    <section id="floating">
+        <div class="container">
+            <ul>
+                <li class="social-link"><a href="https://wa.me/9944111723" target="_blank"><img src="./images/whatsapp.png" alt="whatsapp" height="50px" width="50px"></a></li>
+                <li class="social-link"><a href="#"><img src="./images/facebook.png" alt="fackbook" height="50px" width="50px"></a></li>
+                <li class="social-link"><a href="#"><img src="./images/instagram.png" alt="instagram" height="50px" width="50px"></a></li>
+            </ul>
+            <div onclick="showSocials()">
+                <img src="./images/up_arr.png" alt="" height="50px" width="50px">
+            </div>
+        </div>
+    </section>   
+</body>
+<script>
+    function showMenu(){
+        var links = document.getElementsByClassName('nav-link');
+        for(let i=0; i<links.length;i++){
+            links[i].classList.toggle('show');
+        }
+    }
+
+    function showSocials(){
+        var Socials = document.getElementsByClassName('social-link');
+        for (let j=0;j<Socials.length;j++){
+            Socials[j].classList.toggle('visible');
+        }
+    }
+
+    let date = new Date();
+    let Year = date.getFullYear();
+    document.getElementById('year').innerText = Year;
+</script>
+</html>
