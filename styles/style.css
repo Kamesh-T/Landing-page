@@ -244,7 +244,7 @@ footer{
 
 @keyframes about-animation{
     from{
-        translate:150vw 0;
+        translate:-150vw 0;
     }
     to{
         translate:0 0;
