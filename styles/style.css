@@ -111,6 +111,7 @@ ul > li > a{
     justify-content: center;
     align-items: center;
     background-color: rgb(41, 41, 41);
+    overflow:hidden;
 }
 
 .about>.container{
