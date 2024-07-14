@@ -20,6 +20,7 @@ nav{
     display: flex;
     justify-content:space-between;
     align-items: center;
+    z-index:1;
 }
 
 .logo{
@@ -38,6 +39,11 @@ ul{
 }
 ul>li{
     padding:0 2rem;
+    transition:1s;
+}
+ul>li:focus,
+ul>li:hover{
+    color:floralwhite;
 }
 ul > li > a{
     text-decoration: none;
