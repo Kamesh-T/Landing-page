@@ -88,13 +88,9 @@
 <script>
     function showMenu(){
         var links = document.getElementsByClassName('nav-link');
-        // for(let i=0; i<links.length;i++){
-        //     links[i].classList.toggle('show');
-        // }
-
-        links.array.forEach(element => setInterval({
-            element.classList.toggle('show')
-        },100);
+         for(let i=0; i<links.length;i++){
+             links[i].classList.toggle('show');
+         }   
     }
 
     function showSocials(){
